@@ -1,0 +1,53 @@
+<style>
+
+       body{
+        display:flex;
+        flex-direction: column;
+        background-color:purple;
+       }
+        header{
+            background-color: rgb(196, 40, 40);
+            font-size: 30pt;
+            display: flex;
+            flex: 4;
+            justify-content:space-between;
+        
+        }
+        main{
+            background-color: rgb(0, 66, 151);
+            display: flex;
+            flex: 2;
+        }
+        
+        section{
+            display: flex;
+            background-color: rgb(95, 238, 171);
+            width: 100%;
+            column-gap: 10px;
+        }
+        footer{
+        background: linear-gradient(to top, violet, lime);
+        display: flex;
+        flex: 1;
+    }
+        aside{
+            background-color: rgb(255, 230, 0);
+            width: 20%;
+            padding: 40px;
+
+        }
+        article{
+                background-color: silver;
+                width: 100%;
+        }
+        ul{display: flex;
+            list-style: none;}
+    
+        li{margin-right: 5px;}
+    
+        img{height:10%;
+            motion-rotation: 30rad;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;}
+    </style>
