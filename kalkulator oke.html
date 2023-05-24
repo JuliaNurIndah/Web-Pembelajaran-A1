@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Perulangan </title>
+</head>
+<body>
+    <div>
+        <input type="number" id = "angka1">
+        <select id = "operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id = "angka2">
+        <span>=</span>
+        <span id="hasil">Hasil</span><br><br>
+        <button id="submit">Submit</button>
+    </div>
+    <script>
+    const submit=document.getElementById("submit");
+    submit.addEventListener('click',function(){
+        const angka1 = document.getElementById("angka1");
+        const angka2 = document.getElementById("angka2");
+        const operator = document.getElementById("operator");
+        const hasil = document.getElementById("hasil");
+        let nilai1=Number(angka1.value);
+        let nilai2=Number(angka2.value);
+        let op = operator.value;
+        let hasilPerhitungan;
+        if(op === "+"){
+            hasilPerhitungan = nilai1+nilai2;
+        } else if (op==="-"){
+            hasilPerhitungan = nilai1-nilai2;
+        } else if (op==="*"){
+            hasilPerhitungan = nilai1*nilai2;
+        }else if (op==="/"){
+            hasilPerhitungan = nilai1/nilai2;
+        }
+        hasil.innerHTML= hasilPerhitungan;
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Perulangan </title>
+    </head>
+    <body>
+        <script>
+            for(let counter=1;counter<=10;counter++)
+            {document.writeln("<p>Perulangan ke :" +counter+"</p>");
+            }
+            
+            function segitiga1(baris) {let pola ='';
+            for(let i=1; i <= baris; i++){
+            for (let j = 1; j <= i ; j++){pola += '*';}
+            pola += '</br>';}return pola;}
+            document.writeln(segitiga1(5));
+            
+
+            function segitiga2(baris) {
+                let pola = '';
+                for(let i=1; i <= baris; i++){
+                    for (let j = baris; j >= i ; j--){
+                        pola += '*';}
+                        pola += '</br>';}
+                        return pola;}
+                        document.writeln(segitiga2(5));
+        
+    
+        </script>
+    </body>
+</html>
